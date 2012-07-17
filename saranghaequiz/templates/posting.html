@@ -1,0 +1,154 @@
+<!doctype html>
+<!-- conditional comment for mobile ie7 -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Saranghae Quiz</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${request.static_url('saranghaequiz:static/apple-touch-icon.png')}">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${request.static_url('saranghaequiz:static/apple-touch-icon.png')}">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="${request.static_url('saranghaequiz:static/apple-touch-icon-precomposed.png')}">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="${request.static_url('saranghaequiz:static/apple-touch-icon.png')}">
+  
+  <!--iOS web app, deletable if not needed -->
+  <!--<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-startup-image" href="images/l/splash.png"> -->
+  
+  <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
+  
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+  
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+  
+  <!-- Main Stylesheet -->
+  <!--link rel="stylesheet"
+  href="${request.static_url('saranghaequiz:static/css/style.css')}?v=1"-->
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="${request.static_url('saranghaequiz:static/js/libs/modernizr-2.5.3.min.js')}"></script>
+<style type="text/css">
+<!--
+#quiztop {
+	height: 20px;
+	width: 305px;
+	text-align: right;
+	vertical-align: text-bottom;
+	margin-left: 121px;
+	margin-bottom: 37px;
+	margin-top: 14px;
+	margin-right: 24px;
+}
+#quizcontent {
+	height: 130px;
+	width: 410px;
+	text-align: left;
+	margin-top: 3px;
+	margin-right: 20px;
+	margin-bottom: 18px;
+	margin-left: 20px;
+}
+#quizbottom {
+	height: 15px;
+	width: 261px;
+	text-align: right;
+	margin-left: 11px;
+	margin-bottom: 7px;
+	margin-top: 6px;
+	margin-right: 11px;
+}
+.quiz {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+}
+.quizprize {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+}
+.quizcontent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFF;
+}
+.quizboldtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #FFF;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #FFF;
+}
+a:hover {
+	color: #FFF;
+}
+a:active {
+	color: #FFF;
+}
+-->
+</style>
+  
+</head>
+
+<body>
+
+<table width="450" height="250" border="0" cellpadding="0" cellspacing="0" id="Quiz">
+  <tr>
+    <td height="71" colspan="2" align="left" valign="bottom"
+        background="${request.static_url('saranghaequiz:static/images/QuizTop.png')}"><div class="quiz" id="quiztop">Hadiah periode ini senilai <span class="quizprize">Rp. 1.000.000,-</span></div></td>
+  </tr>
+  <tr>
+    <td height="151" colspan="2" align="left" valign="top"
+        background="${request.static_url('saranghaequiz:static/images/QuizBackColor.png')}">
+        <div class="quizcontent" id="quizcontent"><span
+                class="quizboldtext">Terimakasih.</span><br />
+<br />
+
+<strong>Terimakasih atas partisipasi anda.</strong>
+            Poin anda sudah terdaftar.
+            <br />
+            Nantikan quiz berikutnya minggu depan untuk mendapatkan hadiah
+            keren dari IYAA.com
+            <br /><br />
+
+</div></td>
+  </tr>
+  <tr>
+      <td height="28" width="167"
+          background="${request.static_url('saranghaequiz:static/images/QuizBackColor.png')}"><a
+              href="#">
+              <img
+              src="${request.static_url('saranghaequiz:static/images/QuizSubmitButton.png')}" alt="Submit" width="167" height="28" border="0" /></a></td>
+    <td width="283" height="28" align="left" valign="bottom"
+        background="${request.static_url('saranghaequiz:static/images/QuizBackColor.png')}"><div class="quiz" id="quizbottom">Periode 16 Juli 2012 - 21 Juli 2012</div></td>
+  </tr>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+quiz point:
+
+for user in user_doc.find():
+    print user['username'], user['total_point']
+
+
+comment-point
+./mongo_gan.py --post [userid] + ./mongo_gan.py --reply [userid] * 2

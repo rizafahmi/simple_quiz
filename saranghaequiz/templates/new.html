@@ -1,0 +1,111 @@
+<!doctype html>
+<!-- conditional comment for mobile ie7 -->
+<!--[if IEMobile 7 ]>    <html class="no-js iem7" manifest="default.appcache?v=1"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" manifest="default.appcache?v=1"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+
+  <title>New Saranghae Quiz</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Home screen icon  Mathias Bynens http://goo.gl/6nVq0 -->
+  <!-- For iPhone 4 with high-resolution Retina display: -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${request.static_url('saranghaequiz:static/apple-touch-icon.png')}">
+  <!-- For first-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${request.static_url('saranghaequiz:static/apple-touch-icon.png')}">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="${request.static_url('saranghaequiz:static/apple-touch-icon-precomposed.png')}">
+  <!-- For nokia devices: -->
+  <link rel="shortcut icon" href="${request.static_url('saranghaequiz:static/apple-touch-icon.png')}">
+  
+  <!--iOS web app, deletable if not needed -->
+  <!--<meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-startup-image" href="images/l/splash.png"> -->
+  
+  <!-- more tags for your 'head' to consider https://gist.github.com/849231 -->
+  
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <meta http-equiv="cleartype" content="on">
+  
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="${request.static_url('saranghaequiz:static/css/style.css')}?v=1">
+ 
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="${request.static_url('saranghaequiz:static/js/libs/modernizr-2.5.3.min.js')}"></script>
+  <style type="text/css" media="all">
+      body {
+          background: black;
+        }
+  </style>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+        Insert New Quiz
+    </header>
+    <div id="main">
+		<form action="" method="POST" accept-charset="utf-8">
+		  <p><label for="question">Question </label><textarea name="question" rows="4" cols="60"></textarea></p>
+		  <p><label for="answer_a._">Answer a. </label><input type="text" name="a" value="" id="a">
+		  </p>
+		  <p><label for="answer_b._">Answer b. </label><input type="text" name="b" value="" id="b">
+  		  </p>
+  		  <p><label for="answer_c._">Answer c. </label><input type="text" name="c" value="" id="c">
+  		  </p>
+  		  <p><label for="answer_d._">Answer d. </label><input type="text" name="d" value="" id="d">
+  		  </p>
+  		  <p><label for="key">Key Answer</label><input type="text" name="key" value="" id="key">
+    		  </p>
+  		  <p><label for="password">Password </label><input type="text" name="password" value="" id="password">
+    		  </p>
+
+              <p><label for="schedule">Date Published</label>
+                <input type="text" name="date_publish" id="date_publish" value="" />
+                Date Format: 22-02-2012 (dd-mm-yyyy)
+              
+              </p>
+		  <p><input type="submit" value="Continue"></p>
+		</form>
+	
+    </div>
+    
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+  
+  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+  <script src="${request.static_url('saranghaequiz:static/js/libs/jquery-1.7.1.min.js')}"></script>
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <!--script src="${request.static_url('saranghaequiz:static/js/libs/respond.js')}"></script>
+  <script src="${request.static_url('saranghaequiz:static/js/libs/helper.js')}"></script-->
+  <script src="${request.static_url('saranghaequiz:static/js/script.js')}?v=1"></script>
+  <!-- end concatenated and minified scripts-->
+
+  <!-- Debugger - remove for production -->
+  <!-- <script src="https://getfirebug.com/firebug-lite.js"></script> -->
+  
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    // var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    //     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    //     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    //     s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+</html>
